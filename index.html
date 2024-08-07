@@ -1,7 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Papers and Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .paper, .video, .info, .abstract, .images {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        h3 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+        }
+        .abstract p {
+            line-height: 1.6; /* Adjust the line height as needed */
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .authors {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .authors a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .authors a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Towards Safe and Robust Autonomous Vehicle Platooning:</h1>
+        <h1>A Data-Model-Knowledge Hybrid-Driven Self-Organizing Cooperative Control Framework</h1>
+    </header>
+    <div class="container">
+        <div class="info">
+<!--            <h2>Authors</h2>-->
+            <div class="authors">
+                <a href="https://author1-homepage.com" target="_blank">Chengkai Xu</a>
+                <a href="https://author2-homepage.com" target="_blank">Zihao Deng</a>
+                <a href="https://jiaqiliu-aca.netlify.app/" target="_blank">Jiaqi Liu</a>
+                <a href="https://tops.tongji.edu.cn/info/1031/1383.htm" target="_blank">Peng Hang</a>
+            </div>
+        </div>
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>
+                In the emerging hybrid traffic flow environment, which includes both human-driven vehicles (HDVs) and autonomous vehicles (AVs), ensuring safe and robust decision-making and control is crucial for the effective operation of self-driving formations. Current systems for cooperative adaptive cruise control and lane changing are inadequate in responding to real-world emergency situations, limiting the potential of autonomous vehicle platooning technology. To address the aforementioned challenges, we propose a Twin-World Safety-Enhanced Data-Model-Knowledge Hybrid-Driven autonomous vehicle platooning Cooperative Control Framework. Within this framework, a deep reinforcement learning formation decision model integrating traffic priors is designed, and a twin-world deduction model based on safety priority judgment is proposed. Subsequently, an optimal control-based multi-scenario decision-control right adaptive switching mechanism is designed to achieve adaptive switching between data-driven and model-driven methods. Through simulation experiments and hardware-in-the-loop tests, our algorithm has demonstrated excellent performance in terms of safety, robustness, and flexibility.
+            </p>
+        </div>
+        <div class="images">
+            <h2>Images</h2>
+            <img src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/framework.png?raw=true" alt="The overview of the proposed data-model-knowledge hybrid-driven framework for self-organizing autonomous vehicle platooning.">
+            <h3>The overview of the proposed data-model-knowledge hybrid-driven framework for self-organizing autonomous vehicle platooning.</h3>
+            <br>
+            <img src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/scenario.png?raw=true" alt="Illustration of the considered traffic scenario and the solution. CAVs (Red) and HDVs (Green) are both considered.">
+            <h3>Illustration of the considered traffic scenario and the solution. CAVs (Red) and HDVs (Green) are both considered.</h3>
+            <br>
+            <img src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/Reward.png?raw=true" alt="Illustration of the designed headway maintaining reward, which considers both the single-vehicle rewards and the multi-vehicle rewards.">
+            <h3>Illustration of the designed headway maintaining reward, which considers both the single-vehicle rewards and the multi-vehicle rewards.</h3>
+        </div>
+        <div class="video">
+            <h2>Videos</h2>
+            <h3>SIL experiment</h3>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/S - human interference.mp4?raw=true" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/S - traffic accidents.mp4?raw=true" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/S - fluctuations in traffic flow.mp4?raw=true" type="video/mp4">
+            </video>
+            <h3>HIL experiment</h3>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/freecompress-H - human interference.mp4?raw=true" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/freecompress-H - traffic accidents.mp4?raw=true" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="https://github.com/PerfectXu88/towardssafeandrobust.github.io/blob/main/freecompress-H - fluctuations in traffic flow.mp4?raw=true" type="video/mp4">
+            </video>
+        </div>
+    </div>
 </body>
 </html>
